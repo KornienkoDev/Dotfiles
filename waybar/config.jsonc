@@ -1,0 +1,74 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "bottom", 
+    "position": "top", 
+    "height": 30, 
+    "spacing": 4, 
+
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+        
+    ],
+    "modules-center": [
+    ],
+
+    "modules-right": [
+        "hyprland/language",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "disk",
+        "clock",
+        "tray"
+    ],
+
+    // Modules configuration
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*" : 10
+        }
+    },
+    "hyprland/window" : {
+        "max-length": 40,
+        "seperate-outputs": false
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+        // "icons": {
+        //   "blueman": "bluetooth",
+        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+        // }
+    },
+    "clock": {
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "RAM: {used}GiB"
+    },
+    "disk": {
+        "interval": 60,
+        "path": "/",
+        "format": "Disk: {free}"
+    },
+    "hyprland/language": {
+        "format-en": "En",
+        "format-ru": "Ru",
+        "format-uk": "Uk"
+    },
+    "pulseaudio": {
+        "format": "Vol: {volume}%",
+        "scroll-step": 1,
+        "on-click": "foot --title=Wiremix -e wiremix"
+    }
+}
