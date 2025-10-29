@@ -47,7 +47,8 @@
         // }
     },
     "clock": {
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d}",
+        "tooltip-format": "<big><tt>{calendar}</tt></big>"
     },
     "cpu": {
         "format": "CPU: {usage}%",
