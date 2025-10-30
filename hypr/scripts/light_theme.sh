@@ -25,5 +25,7 @@ hyprctl hyprpaper wallpaper DP-3, "$HOME/Pictures/Wallpapers/light-wallpaper.jpg
 ln -sf "$CONFIG_DIR/hypr/hyprpaper-light.conf" "$CONFIG_DIR/hypr/hyprpaper.conf"
 #Hyprlock
 ln -sf "$CONFIG_DIR/hypr/hyprlock-light.conf" "$CONFIG_DIR/hypr/hyprlock.conf"
+#Icons
+gsettings set org.gnome.desktop.interface icon-theme 'Colloid-Light'
 
 notify-send "Light theme applied."

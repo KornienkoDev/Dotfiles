@@ -13,6 +13,12 @@
 @define-color brblk #444b6a; 
 @define-color white #ffffff; 
 
+@keyframes urgent-blink {
+    0%   { background-color: #ff5555; color: #ffffff; }
+    50%  { background-color: #ffffff; color: #ff5555; }
+    100% { background-color: #ff5555; color: #ffffff; }
+}
+
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
     font-size: 16px;
@@ -30,20 +36,25 @@ window#waybar {
     background: transparent;
     border-radius: 0px;
 }
+
 #workspaces button.active {
-    color: @cyn;
-    border-bottom: 3px solid @mag;
-}
-#workspaces button.empty {
-    color: @white;
-}
-#workspaces button.empty.active {
     color: @cyn;
     border-bottom: 4px solid @mag;
 }
 
+#workspaces button.empty {
+    color: @white;
+}
+
+#workspaces button.empty.active {
+    color: @cyn;
+    border-bottom: 3px solid @mag;
+}
+
 #workspaces button.urgent {
-    background-color: @red;
+    animation: urgent-blink 3s infinite;
+    border-radius: 6px;
+    border: 1px solid #ff0000;
 }
 
 button:hover {
@@ -65,7 +76,6 @@ button:hover {
 
 #clock {
     color: @cyn;
-    border-bottom: 4px solid @cyn;
 }
 
 #battery {

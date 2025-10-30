@@ -25,6 +25,8 @@ hyprctl hyprpaper wallpaper DP-3, "$HOME/Pictures/Wallpapers/dark-wallpaper.jpg"
 ln -sf "$CONFIG_DIR/hypr/hyprpaper-dark.conf" "$CONFIG_DIR/hypr/hyprpaper.conf"
 #Hyprlock
 ln -sf "$CONFIG_DIR/hypr/hyprlock-dark.conf" "$CONFIG_DIR/hypr/hyprlock.conf"
+#Icons
+gsettings set org.gnome.desktop.interface icon-theme 'Colloid-Dark'
 
 notify-send "Dark theme applied."
 
