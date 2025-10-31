@@ -111,10 +111,16 @@
         },
         {
             "type": "uptime",
-            "key": "└󰅐",
+            "key": "├󰅐",
             "keyColor": "green"
         },
-
+        {
+            "key": "└",
+            "type": "disk",
+            "keyColor": "green",
+            "folders": "/",
+            "format": "{days} days"
+        },
         "break",
         {
             "type": "sound",

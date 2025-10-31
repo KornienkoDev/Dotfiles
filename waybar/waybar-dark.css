@@ -6,7 +6,6 @@
 @define-color red   #f7768e; 
 @define-color grn   #9ece6a; 
 @define-color ylw   #e0af68;
-@define-color yylw  #d7d70d;
 @define-color blu   #7aa2f7; 
 @define-color mag   #ad8ee6; 
 @define-color cyn   #0db9d7; 
@@ -28,6 +27,7 @@
 window#waybar {
     background-color: @bg;
     color: @fg;
+    background-color: rgba(0,0,0,0.6);
 }
 
 #workspaces button {
@@ -99,7 +99,7 @@ button:hover {
 }
 
 #tray {
-    background-color: #aca2b5;
+    background-color: #22162c;
 }
 
 #language {

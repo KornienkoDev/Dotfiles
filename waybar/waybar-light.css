@@ -3,13 +3,12 @@
 @define-color bg    #1a1b26; 
 @define-color fg    #EDEDF0; 
 @define-color blk   #32344a; 
-@define-color red   #f7768e; 
-@define-color grn   #9ece6a; 
-@define-color ylw   #e0af68;
-@define-color yylw  #d7d70d;
-@define-color blu   #7aa2f7; 
-@define-color mag   #ad8ee6; 
-@define-color cyn   #0db9d7; 
+@define-color red   #942438; 
+@define-color grn   #548123; 
+@define-color ylw   #8f8300;
+@define-color blu   #234285; 
+@define-color mag   #5f36aa; 
+@define-color cyn   #098aa0; 
 @define-color brblk #444b6a; 
 @define-color white #ffffff; 
 
@@ -26,7 +25,7 @@
 }
 
 window#waybar {
-    background-color: @fg;
+    background-color: rgba(255,255,255,0.6);
     color: @bg;
 }
 
@@ -99,7 +98,7 @@ button:hover {
 }
 
 #tray {
-    background-color: #aca2b5;
+    background-color: #22162c;
 }
 
 #language {
