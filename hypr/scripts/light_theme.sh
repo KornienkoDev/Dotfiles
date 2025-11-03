@@ -18,7 +18,7 @@ swaync-client -rs
 ln -sf "$CONFIG_DIR/btop/themes/btop-light.theme" "$CONFIG_DIR/btop/themes/current.theme"
 #Waybar
 ln -sf "$CONFIG_DIR/waybar/waybar-light.css" "$CONFIG_DIR/waybar/style.css"
-pkill waybar; uwsm-app -- waybar &
+pkill waybar && uwsm-app -- waybar &
 #Fuzzel
 ln -sf "$CONFIG_DIR/fuzzel/fuzzel-light.ini" "$CONFIG_DIR/fuzzel/fuzzel.ini"
 #Wallpaper
