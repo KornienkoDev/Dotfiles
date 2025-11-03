@@ -16,8 +16,9 @@ case "$ACTION" in
             if [ "$new_value" -gt 100 ]; then new_value=100; fi
             ddcutil setvcp 10 "$new_value" --brief --noverify 2>/dev/null
             notify-send -h "string:x-canonical-private-synchronous:brightness" \
-                       -h "int:value:$new_value" \
-                       "󰃠 Brightness: $new_value%"
+                        -h int:transient:1 \
+                        -h "int:value:$new_value" \
+                        "󰃠 Brightness: $new_value%"
         fi
         ;;
     "dec")
@@ -27,8 +28,9 @@ case "$ACTION" in
             if [ "$new_value" -lt 0 ]; then new_value=0; fi
             ddcutil setvcp 10 "$new_value" --brief --noverify 2>/dev/null
             notify-send -h "string:x-canonical-private-synchronous:brightness" \
-                       -h "int:value:$new_value" \
-                       "󰃠 Brightness: $new_value%"
+                        -h int:transient:1 \
+                        -h "int:value:$new_value" \
+                        "󰃠 Brightness: $new_value%"
         fi
         ;;
 esac

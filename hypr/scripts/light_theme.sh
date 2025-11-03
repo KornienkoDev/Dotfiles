@@ -28,4 +28,4 @@ ln -sf "$CONFIG_DIR/hypr/hyprlock-light.conf" "$CONFIG_DIR/hypr/hyprlock.conf"
 #Icons
 gsettings set org.gnome.desktop.interface icon-theme 'Colloid-Light'
 
-notify-send "Light theme applied."
+notify-send -h int:transient:1 "Theme manager" "Light theme applied."

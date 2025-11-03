@@ -28,5 +28,5 @@ ln -sf "$CONFIG_DIR/hypr/hyprlock-dark.conf" "$CONFIG_DIR/hypr/hyprlock.conf"
 #Icons
 gsettings set org.gnome.desktop.interface icon-theme 'Colloid-Dark'
 
-notify-send "Dark theme applied."
+notify-send -h int:transient:1 "Theme manager" "Dark theme applied."
 

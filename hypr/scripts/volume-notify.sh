@@ -40,7 +40,7 @@ else
 fi
 
 # Send notification with slider
-notify-send \
+notify-send -h int:transient:1 \
   -h string:synchronous:volume \
   -h int:value:"$vol" \
   "$icon $msg"
