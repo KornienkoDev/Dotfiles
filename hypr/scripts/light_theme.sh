@@ -5,6 +5,8 @@ CONFIG_DIR="$HOME/.config"
 #GTK
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
 gsettings set org.gnome.desktop.interface color-scheme 'default'
+#Icons
+gsettings set org.gnome.desktop.interface icon-theme 'Colloid-Light'
 #QT
 ln -sf "$CONFIG_DIR/hypr/hyprqt6engine-light.conf" "$CONFIG_DIR/hypr/hyprqt6engine.conf"
 #Foot
@@ -28,4 +30,4 @@ ln -sf "$CONFIG_DIR/hypr/hyprlock-light.conf" "$CONFIG_DIR/hypr/hyprlock.conf"
 #Icons
 gsettings set org.gnome.desktop.interface icon-theme 'Colloid-Light'
 
-notify-send -h int:transient:1 "Theme manager" "Light theme applied."
+notify-send -h int:transient:1 "Light theme applied."
