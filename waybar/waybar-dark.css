@@ -28,7 +28,6 @@
 window#waybar {
     background-color: @bg;
     color: @fg;
-    background-color: rgba(0,0,0,0.7);
 }
 
 #workspaces button {
@@ -70,6 +69,7 @@ button:hover {
 #disk,
 #network,
 #tray,
+#pulseaudio,
 #language {
     padding: 0 8px;
     color: @white;

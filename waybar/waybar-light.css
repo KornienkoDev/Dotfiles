@@ -1,15 +1,15 @@
 /* LIGHT MODE */
 
-@define-color bg    #1a1b26; 
-@define-color fg    #EDEDF0; 
-@define-color blk   #32344a; 
-@define-color red   #942438; 
-@define-color grn   #548123; 
+@define-color bg    #1a1b26;
+@define-color fg    #F5F5F5;
+@define-color blk   #32344a;
+@define-color red   #942438;
+@define-color grn   #548123;
 @define-color ylw   #8f8300;
-@define-color blu   #234285; 
-@define-color mag   #5f36aa; 
-@define-color cyn   #098aa0; 
-@define-color brblk #444b6a; 
+@define-color blu   #234285;
+@define-color mag   #5f36aa;
+@define-color cyn   #098aa0;
+@define-color brblk #444b6a;
 @define-color white #ffffff;
 @define-color tray  #ab77d6;
 
@@ -26,7 +26,7 @@
 }
 
 window#waybar {
-    background-color: rgba(255,255,255,0.7);
+    background-color: @fg;
     color: @bg;
 }
 
