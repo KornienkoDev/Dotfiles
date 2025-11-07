@@ -11,7 +11,7 @@
 @define-color cyn   #0db9d7; 
 @define-color brblk #444b6a; 
 @define-color white #ffffff;
-@define-color tray  #22162c;
+@define-color tray  #745290;
 
 @keyframes urgent-blink {
     0%   { background-color: #ff5555; color: #ffffff; }
@@ -69,7 +69,9 @@ button:hover {
 #disk,
 #network,
 #tray,
+#custom-media,
 #pulseaudio,
+#window,
 #language {
     padding: 0 8px;
     color: @white;
@@ -77,6 +79,7 @@ button:hover {
 
 #clock {
     color: @cyn;
+    border-bottom: 4px solid @cyn;
 }
 
 #battery {

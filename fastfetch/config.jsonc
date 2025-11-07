@@ -21,11 +21,6 @@
             "format": "{2}"
         },
         {
-            "type": "os",
-            "key": "├{icon}", // Just get your distro's logo off nerdfonts.com
-            "keyColor": "yellow"
-        },
-        {
             "type": "kernel",
             "key": "├",
             "keyColor": "yellow"
@@ -64,7 +59,7 @@
         },
         {
             "type": "terminal",
-            "key": "├",
+            "key": "└",
             "keyColor": "blue"
         },
         {

@@ -8,11 +8,10 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window"
-        
+        "custom/media"
     ],
     "modules-center": [
-        "clock"
+        "hyprland/window"
     ],
 
     "modules-right": [
@@ -21,6 +20,7 @@
         "cpu",
         "memory",
         "disk",
+        "clock",
         "tray"
     ],
 
@@ -66,6 +66,14 @@
         "format-en": "En",
         "format-ru": "Ru",
         "format-uk": "Uk"
+    },
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 40,
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
     },
     "pulseaudio": {
         "format": "Vol: {volume}%",

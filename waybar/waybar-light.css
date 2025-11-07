@@ -69,13 +69,17 @@ button:hover {
 #disk,
 #network,
 #tray,
+#custom-media,
+#pulseaudio,
+#window,
 #language {
     padding: 0 8px;
-    color: @white;
+    color: @brblk;
 }
 
 #clock {
     color: @cyn;
+    border-bottom: 4px solid @cyn;
 }
 
 #battery {
@@ -105,6 +109,10 @@ button:hover {
 #language {
     color: @red;
     border-bottom: 4px solid @red;
+}
+
+#custom-media {
+    color: @bg;
 }
 
 #pulseaudio {
