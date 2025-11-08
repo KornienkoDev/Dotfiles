@@ -79,7 +79,6 @@ button:hover {
 
 #clock {
     color: @cyn;
-    border-bottom: 4px solid @cyn;
 }
 
 #battery {

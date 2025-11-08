@@ -11,16 +11,14 @@
         "custom/media"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock"
     ],
-
     "modules-right": [
         "hyprland/language",
         "pulseaudio",
         "cpu",
         "memory",
         "disk",
-        "clock",
         "tray"
     ],
 
@@ -70,7 +68,7 @@
     "custom/media": {
         "format": "{icon} {text}",
         "return-type": "json",
-        "max-length": 40,
+        "max-length": 32,
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
         "on-click": "playerctl play-pause"

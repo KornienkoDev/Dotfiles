@@ -101,7 +101,7 @@ class PlayerManager:
             self.clear_output()
             return
 
-        icon = "" if player.props.status == "Playing" else ""
+        icon = "" if player.props.status == "Playing" else ""
         track_info = f"{icon} {title}"
 
         current_playing = self.get_first_playing_player()

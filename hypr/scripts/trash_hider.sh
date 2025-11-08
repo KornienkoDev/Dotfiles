@@ -29,7 +29,6 @@ DESKTOP_FILES=(
     "qdbusviewer.desktop"
     "cmake-gui.desktop"
     "lstopo.desktop"
-    
 )
 
 # Create destination directory if it doesn't exist
